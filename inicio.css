@@ -7,8 +7,14 @@
     list-style: none;
  
 }
+.foto{
+    height: 250px;
+    width: 300px;
+    padding-left: 30px;
+}
 body{
     font-family: "Chelsea Market", system-ui;
+    background-color: black;
 }
 .background-preto{
     background-color: black;
@@ -42,6 +48,8 @@ nav{
     color: white;
 
     padding-left: 30px;
+    display: flex;
+ 
 }
 
 .ul{
@@ -71,14 +79,24 @@ main .container{
     font-size: 3.9rem;
 }
 .span{
-    font-size:40px;
+    font-size:454px;
 }
-.botao{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    color: white;
-    
+.botao {
+    display: flex;               /* Usa o modelo de layout flex */
+    justify-content: center;     /* Centraliza os botões horizontalmente */
+    align-items: center;         /* Centraliza os botões verticalmente */
+    gap: 10px;                   /* Espaçamento entre os botões */
+    height: 10vh;               /* Faz com que a div ocupe a altura inteira da tela */
+}
+
+.botao button {
+    padding: 10px 20px;          /* Adiciona preenchimento interno aos botões */
+    font-size: 16px;              /* Define o tamanho da fonte dos botões */
+    cursor: pointer;             /* Muda o cursor para pointer quando o mouse passa sobre o botão */
+    border: none;                /* Remove a borda dos botões */
+    background-color: #ff0000;   /* Cor de fundo para os botões */
+    color: white;                /* Cor do texto do botão */
+    border-radius: 5px;          /* Bordas arredondadas para os botões */
 }
 
 
